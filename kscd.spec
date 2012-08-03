@@ -1,12 +1,12 @@
 Name:		kscd
 Summary:	KDE Audio CD Player
-Version:	4.8.95
+Version:	4.9.0
 Release:	1
 Epoch:		3
 Group:		Graphical desktop/KDE
 License:	GPLv2
 URL:		http://www.kde.org/applications/multimedia/kscd
-Source:		ftp://ftp.kde.org/pub/kde/unstable/%{version}/src/%{name}-%{version}.tar.xz
+Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	kdelibs4-devel
 BuildRequires:	libkcddb-devel
 BuildRequires:	libkcompactdisc-devel

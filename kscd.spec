@@ -1,6 +1,6 @@
 Name:		kscd
 Summary:	KDE Audio CD Player
-Version: 4.9.2
+Version: 4.9.3
 Release: 1
 Epoch:		3
 Group:		Graphical desktop/KDE

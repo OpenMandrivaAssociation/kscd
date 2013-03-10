@@ -6,7 +6,8 @@ Epoch:		3
 Group:		Graphical desktop/KDE
 License:	GPLv2
 URL:		http://www.kde.org/applications/multimedia/kscd
-Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
+Patch0:		kscd-4.9.0-fix-multiple-CD-device.patch
 BuildRequires:	kdelibs4-devel
 BuildRequires:	pkgconfig(libmusicbrainz3)
 Requires:	kdebase4-runtime
@@ -31,6 +32,7 @@ multiple platforms.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %cmake_kde4
@@ -44,6 +46,7 @@ multiple platforms.
 - New version 4.10.1
 - Update files
 - Drop no longer needed BuildRequires libkcddb-devel and libkcompactdisc-devel
+- Add patch from Mageia to to fix kscd on systems with multiple CD drives
 
 * Thu Feb 07 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 3:4.10.0-1
 - New version 4.10.0

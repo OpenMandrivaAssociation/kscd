@@ -1,8 +1,7 @@
-diff --git a/audiocd.cpp b/audiocd.cpp
-index 5a1f308..d3aa457 100644
---- a/audiocd.cpp
-+++ b/audiocd.cpp
-@@ -89,7 +89,7 @@ AudioCD::AudioCD(Solid::Device aCd)
+diff -urN kscd-4.12.1/audiocd.cpp kscd-4.12.1-patched/audiocd.cpp
+--- kscd-4.12.1/audiocd.cpp	2014-01-01 17:33:55.000000000 +1100
++++ kscd-4.12.1-patched/audiocd.cpp	2014-01-16 02:25:05.041826610 +1100
+@@ -89,7 +89,7 @@
  			{
  				cd = devList[i].as<Solid::OpticalDisc>();
  				block = odsign.as<Solid::Block>();
@@ -11,7 +10,7 @@ index 5a1f308..d3aa457 100644
  			}
  		}
  	}
-@@ -165,7 +165,7 @@ void AudioCD::reloadCD()
+@@ -165,7 +165,7 @@
  				kDebug() << "CD inserted!";
  				cd = devList[i].as<Solid::OpticalDisc>();
  				block = odsign.as<Solid::Block>();
@@ -20,11 +19,10 @@ index 5a1f308..d3aa457 100644
  				emit(discChanged ());
  			}
  		}
-diff --git a/hwcontroler.cpp b/hwcontroler.cpp
-index fe56e58..455d683 100644
---- a/hwcontroler.cpp
-+++ b/hwcontroler.cpp
-@@ -75,12 +75,21 @@ HWControler::HWControler ()
+diff -urN kscd-4.12.1/hwcontroler.cpp kscd-4.12.1-patched/hwcontroler.cpp
+--- kscd-4.12.1/hwcontroler.cpp	2014-01-01 17:33:55.000000000 +1100
++++ kscd-4.12.1-patched/hwcontroler.cpp	2014-01-16 02:25:05.042826625 +1100
+@@ -71,12 +71,21 @@
  	// else loading  all optical drives
  	else
  	{
@@ -46,8 +44,8 @@ index fe56e58..455d683 100644
 +		connect(cdIn[selectedCd],SIGNAL(discChanged()),this,SLOT(configMedia()));
  	}
  
- 	//TODO: Load ALL audio output
-@@ -499,14 +508,12 @@ void HWControler::setRandom(bool b)
+ 	selectedS=0;
+@@ -492,14 +501,12 @@
  
  bool HWControler::isDiscValid()
  {

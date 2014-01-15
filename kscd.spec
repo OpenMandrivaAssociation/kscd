@@ -1,13 +1,13 @@
-Name:		kscd
 Summary:	KDE Audio CD Player
+Name:		kscd
 Version:	4.12.1
 Release:	1
 Epoch:		3
+License:	GPLv2+
 Group:		Graphical desktop/KDE
-License:	GPLv2
-URL:		http://www.kde.org/applications/multimedia/kscd
+Url:		http://www.kde.org/applications/multimedia/kscd
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
-Patch0:		kscd-4.9.0-fix-multiple-CD-device.patch
+Patch0:		kscd-4.12.1-fix-multiple-CD-device.patch
 BuildRequires:	kdelibs4-devel
 BuildRequires:	pkgconfig(libmusicbrainz3)
 Requires:	kdebase4-runtime
@@ -44,6 +44,7 @@ multiple platforms.
 %changelog
 * Tue Jan 14 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 3:4.12.1-1
 - New version 4.12.1
+- Re-diff fix-multiple-CD-device patch
 
 * Wed Dec 04 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 3:4.11.4-1
 - New version 4.11.4

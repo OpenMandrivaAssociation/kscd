@@ -1,6 +1,6 @@
 Summary:	KDE Audio CD Player
 Name:		kscd
-Version:	16.12.2
+Version:	17.04.0
 Release:	1
 Epoch:		3
 License:	GPLv2+

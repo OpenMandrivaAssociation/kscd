@@ -1,4 +1,2 @@
-removed_sources:
-  kscd-15.08.0.tar.xz: 6ee3177161bc14deb96d9b39197c947cf1086f12
 sources:
-  kscd-17.04.0.tar.xz: f34cd1a5c95ecd3982697345fa7602067cfc40ab
+  kscd-17.04.2.tar.xz: 376e8ed1a311348f4014f80546fa4754636cf3b5

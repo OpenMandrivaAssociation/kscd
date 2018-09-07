@@ -26,6 +26,7 @@ BuildRequires:	cmake(KF5WidgetsAddons)
 BuildRequires:	cmake(KF5XmlGui)
 BuildRequires:	cmake(Phonon4Qt5)
 BuildRequires:	cmake(Qt5Test)
+BuildRequires:	pkgconfig(libmusicbrainz5)
 
 %description
 KsCD is a small, fast, CDDB enabled audio CD player which supports

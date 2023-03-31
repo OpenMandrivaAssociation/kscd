@@ -3,7 +3,7 @@
 Summary:	KDE Audio CD Player
 Name:		kscd
 Version:	18.08.20180907
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org/applications/multimedia/kscd

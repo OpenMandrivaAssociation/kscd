@@ -6,7 +6,7 @@ Version:	18.08.20180907
 Release:	3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
-Url:		http://www.kde.org/applications/multimedia/kscd
+Url:		https://www.kde.org/applications/multimedia/kscd
 # git://anongit.kde.org/kscd.git -- taken from kf5 branch
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 Patch0:		kscd-4.12.1-fix-multiple-CD-device.patch
